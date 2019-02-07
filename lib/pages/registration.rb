@@ -14,6 +14,7 @@ class Registration
   UNIVERSITY_FIELD_ID = 'inputUni'
   ADDRESS_FIELD_ID = 'inputAddress'
   ADDRESS_TWO_FIELD_ID = 'inputAddress2'
+  POSTCODE_ID = 'inputPostcode'
 
   def visit_registration_page
     visit(REGISTRATION_PAGE_URL)
@@ -53,6 +54,18 @@ class Registration
 
   def fill_in_degree(degree)
     find(:xpath, DEGREE_FIELD_XPATH).set("#{degree}")
+  end
+
+  def fill_in_address(address)
+    fill_in(ADDRESS_FIELD_ID, :with => address)
+  end
+
+  def fill_in_address_two(address)
+    fill_in(ADDRESS_TWO_FIELD_ID, :with => address)
+  end
+
+  def fill_in_postcode(pcode)
+    fill_in(POSTCODE_FIELD_ID, :with => pcode)
   end
 
 
