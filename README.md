@@ -12,7 +12,11 @@ Capybara
 ### How to download
 1. Gitclone the repo or download the ZIP file
 2. Open the root of the folder and run bundle install
-3. Within terminal of the folder you can now type in "rspec" and diplay test results
+
+### How to Use?
+1. Unzip the automation_site.zip and enter the unziped folder
+2. Rackup (type 'rackup' within terminal) the website and leave host running
+3. Type rspec in the root folders terminal to view tests
 
 ### Challenges
 * Not being able to complete the slider section
