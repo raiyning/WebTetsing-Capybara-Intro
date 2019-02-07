@@ -19,9 +19,9 @@ describe 'testing a correct path for sparta registration' do
       @sparta_demo_site.registration_page.fill_in_address('72 cher avenue')
       @sparta_demo_site.registration_page.fill_in_address_two('street or road')
       @sparta_demo_site.registration_page.fill_in_postcode('b420 gf')
+      @sparta_demo_site.registration_page.fill_in_email('based@this.com')
+      @sparta_demo_site.registration_page.fill_in_skills('i got loads of skills')
       
-
-      sleep 5
     end
 
   end

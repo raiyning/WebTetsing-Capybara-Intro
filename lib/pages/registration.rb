@@ -72,5 +72,9 @@ class Registration
     fill_in(EMAILADD_FIELD_ID, :with => email)
   end
 
+  def fill_in_skills(text)
+    fill_in(SKILLS_FIELD_ID, :with => text)
+  end
+
 
 end
