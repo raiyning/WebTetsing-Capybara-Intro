@@ -16,7 +16,10 @@ describe 'testing a correct path for sparta registration' do
       @sparta_demo_site.registration_page.click_male
       @sparta_demo_site.registration_page.fill_in_university('University of uni')
       @sparta_demo_site.registration_page.fill_in_degree('degree of education')
-
+      @sparta_demo_site.registration_page.fill_in_address('72 cher avenue')
+      @sparta_demo_site.registration_page.fill_in_address_two('street or road')
+      @sparta_demo_site.registration_page.fill_in_postcode('b420 gf')
+      
 
       sleep 5
     end
