@@ -68,6 +68,9 @@ class Registration
     fill_in(POSTCODE_FIELD_ID, :with => pcode)
   end
 
+  def fill_in_email(email)
+    fill_in(EMAILADD_FIELD_ID, :with => email)
+  end
 
 
 end
