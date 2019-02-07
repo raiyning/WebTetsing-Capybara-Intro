@@ -14,6 +14,9 @@ describe 'testing a correct path for sparta registration' do
       @sparta_demo_site.registration_page.fill_in_date('06/02/2019')
       @sparta_demo_site.registration_page.click_female
       @sparta_demo_site.registration_page.click_male
+      @sparta_demo_site.registration_page.fill_in_university('University of uni')
+      @sparta_demo_site.registration_page.fill_in_degree('degree of education')
+
 
       sleep 5
     end

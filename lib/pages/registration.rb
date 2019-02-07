@@ -12,6 +12,8 @@ class Registration
   FEMALE_TICK = '/html/body/div/form/div[6]/label'
   DEGREE_FIELD_XPATH = '/html/body/div/form/div[7]/div/input'
   UNIVERSITY_FIELD_ID = 'inputUni'
+  ADDRESS_FIELD_ID = 'inputAddress'
+  ADDRESS_TWO_FIELD_ID = 'inputAddress2'
 
   def visit_registration_page
     visit(REGISTRATION_PAGE_URL)
@@ -52,6 +54,7 @@ class Registration
   def fill_in_degree(degree)
     find(:xpath, DEGREE_FIELD_XPATH).set("#{degree}")
   end
+
 
 
 end
