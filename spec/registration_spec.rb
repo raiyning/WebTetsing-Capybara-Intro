@@ -11,6 +11,9 @@ describe 'testing a correct path for sparta registration' do
       @sparta_demo_site.registration_page.fill_first_name('dashhing')
       @sparta_demo_site.registration_page.fill_last_name('jhonny')
       @sparta_demo_site.registration_page.fill_in_age('7')
+      @sparta_demo_site.registration_page.fill_in_date('06/02/2019')
+      @sparta_demo_site.registration_page.click_female
+      @sparta_demo_site.registration_page.click_male
 
       sleep 5
     end
